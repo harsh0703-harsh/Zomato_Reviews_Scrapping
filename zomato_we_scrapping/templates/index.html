@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Zomato Web Scrapping</h1><br><br>
+    <h1 id="link" >Restaurants Link</h1>
+
+    <div class="form">
+        <form action="/search" method="POST">
+            <input id="inn" type="text" name="locations" id="content" required='required'>
+            <br><br>
+            <button id="sub" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+<style>
+    body{
+    background-color:rgb(201, 230, 72);
+    background-image: url('/static/source.gif');
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    
+    }
+    #inn{
+        width: 865px;
+        height: 60px;
+        border-radius: 45px;
+        text-align: center;
+        font-size: x-large;
+        position: relative;
+        right: 234px;
+    }
+    #sub{
+       width: 132px;
+       height: 55px;
+       border-radius: 40px;
+       position: center;
+       
+    }
+#sub:hover{
+    background-color: red;
+}
+</style>
+{% endblock %}

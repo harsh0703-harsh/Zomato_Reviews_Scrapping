@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   
+
+   <table cellspacing="0">
+      <tr>
+         <th width="300">Comments</th>
+      </tr>
+         {% for review in reviews %}
+      <tr>
+         <td>{{review['Comment']}} </td>
+       {% endfor %}
+   </table>
+</div>
+
+<style>
+   body{
+      background-color: rgb(173, 221, 61);
+   }
+   .table-users{
+      border: solid;
+      border-radius: 45px;
+      font-size: x-large;
+   }
+   tr{
+      color: red;
+      
+   }
+</style>
+
+</body>
+
+</html>
